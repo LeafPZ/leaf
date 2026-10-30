@@ -1,6 +1,5 @@
 from leaf import generator, util
 from leaf.models import (
-    BuildManifestArguments,
     BuildManifestAssetIndexes,
     BuildManifestAssetIndexesEntry,
     DepotManifest,
@@ -61,25 +60,34 @@ def test_generate_version_manifest():
 
     m1 = make_manifest(
         SteamInfo(
-            app_id="108600", depot_id="108602", manifest_id="6878798369135719314", branch="unstable"
+            app_id="108600",
+            depot_id="108602",
+            manifest_id="6878798369135719314",
+            branch="pre-release",
         )
     )
     m2 = make_manifest(
         SteamInfo(
-            app_id="108600", depot_id="108603", manifest_id="5411994706418009543", branch="unstable"
+            app_id="108600",
+            depot_id="108603",
+            manifest_id="5411994706418009543",
+            branch="pre-release",
         )
     )
     m3 = make_manifest(
         SteamInfo(
-            app_id="108600", depot_id="108604", manifest_id="6433165352605909512", branch="unstable"
+            app_id="108600",
+            depot_id="108604",
+            manifest_id="6433165352605909512",
+            branch="pre-release",
         )
     )
 
     m1.merge(m2)
     m1.merge(m3)
 
-    assert m1.id == "42.19.0-unstable+1aa820d"
-    assert m1.steam_branch == "unstable"
+    assert m1.id == "42.19.0-pre-release+1aa820d"
+    assert m1.steam_branch == "pre-release"
     assert m1.git_branch == "steam/release"
     assert m1.git_hash == "1aa820d7bb66c4e55513cae04022bdacdac5b34e"
     assert m1.java_version == 25

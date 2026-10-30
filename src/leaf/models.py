@@ -250,15 +250,15 @@ class GameInfo:
 
     git_branch: Optional[str] = None
     """ 
-    An internal git branch found on b42 unstable releases 
+    An internal git branch found on b42 pre-release releases 
     """
     git_hash: Optional[str] = None
     """ 
-    A git commit hash found on b42 unstable releases 
+    A git commit hash found on b42 pre-release releases 
     """
     revision: Optional[str] = None
     """ 
-    A revision number found on early b42 unstable releases
+    A revision number found on early b42 pre-release releases
     before `git_hash` and `git_branch` were a thing.
     """
 

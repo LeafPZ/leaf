@@ -20,7 +20,6 @@ from leaf.constants import (
     MANIFESTS_URL,
 )
 from leaf.models import (
-    ArgumentRule,
     AssetManifest,
     AssetManifestEntry,
     BuildManifest,
