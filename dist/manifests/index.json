@@ -1,9 +1,16 @@
 {
   "latest": {
-    "public": "42.21.0",
+    "public": "42.22.2",
     "pre-release": "42.19.0-pre-release+1aa820d"
   },
   "versions": {
+    "42.22.2": {
+      "url": "https://github.com/LeafPZ/leaf/raw/refs/heads/main/dist/manifests/42.22.2.json",
+      "size": "5666",
+      "hash": "48b7d800575dbaadb9ce42f8eacf9a052a6a9109",
+      "releaseTime": "2026-11-06T14:17:54Z",
+      "generateTime": "2026-11-10T03:49:12Z"
+    },
     "42.21.0": {
       "url": "https://github.com/LeafPZ/leaf/raw/refs/heads/main/dist/manifests/42.21.0.json",
       "size": "5665",
